@@ -8,14 +8,29 @@ Fixed values, also known as constants, are unchanging values that remain the sam
 
 #### Example:
 
-```javascript
+```
 const PI = 3.14; // A constant representing the mathematical constant Pi
 const greeting = "Hello, World!"; // A constant string greeting
 ```
 
 ### variable values (Variables)
-variable values: These are containers used to stores values that can be changed
+**variable values**: These are containers used to stores values that can be changed
 Examples: string variable, number variables, arrays, and objects
+
+**Declaration**: You declare a variable using the var, let, or const keyword, followed by the variable name:
+```
+var x;
+```
+**Initialization**: You can also initialize a variable at the time of declaration:
+
+```
+let age = 25;
+const pi = 3.14;
+```
+
+**Variable Names**: Variable names in JavaScript must begin with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be numbers. Avoid using keywords as variable names.
+
+**Scope**: Variables declared with var are function-scoped, meaning they are visible throughout the entire function. Variables declared with let and const are block-scoped, visible only within the block (enclosed by curly braces) where they are defined.
 
 #### String Variable: Holds text values
 ```
@@ -80,8 +95,8 @@ let greeting = `Hello, ${name}!`;
 
 **Math Object:** JavaScript provides a built-in `Math` object that contains various methods for mathematical operations.
    ```javascript
-   let squareRoot = Math.sqrt(25);  // 5
-   let randomValue = Math.random(); // random number between 0 and 1
+  Math.sqrt(25);  // 5
+   Math.random(); // random number between 0 and 1
    ```
 
-It's essential to be mindful of potential precision issues when working with floating-point numbers in JavaScript, especially during calculations. If high precision is required, specialized libraries or techniques can be employed.
+
